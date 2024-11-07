@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/innosmartai/static/css/main.53c5e709.css",
+    "main.js": "/innosmartai/static/js/main.80517112.js",
+    "static/js/453.59bb1251.chunk.js": "/innosmartai/static/js/453.59bb1251.chunk.js",
+    "static/media/icons.svg": "/innosmartai/static/media/icons.d27f914d4a5d16394deafb1c5c3b8306.svg",
+    "index.html": "/innosmartai/index.html",
+    "static/media/arrow.svg": "/innosmartai/static/media/arrow.2231739ef862981327cd1d465f65d980.svg",
+    "static/media/circle.svg": "/innosmartai/static/media/circle.359cb68d8d02aee7a915.svg",
+    "static/media/cross.svg": "/innosmartai/static/media/cross.c35ffa934973ebe02f87d109aacd6b30.svg",
+    "main.53c5e709.css.map": "/innosmartai/static/css/main.53c5e709.css.map",
+    "main.80517112.js.map": "/innosmartai/static/js/main.80517112.js.map",
+    "453.59bb1251.chunk.js.map": "/innosmartai/static/js/453.59bb1251.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53c5e709.css",
+    "static/js/main.80517112.js"
+  ]
+}
