@@ -1,0 +1,119 @@
+.aboutSection {
+    overflow: hidden;
+    text-align: center;  /* Light background color */
+    height: 85vh;
+    padding: 5vh 10vw;
+    position: relative;
+  }
+  
+  .sectionTitle {
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 84.41px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+  
+  .circle {
+    position: absolute;
+    right: -3vw;
+    bottom: 0;
+    width: 30vw;
+    transform: translateX(0);
+    height: 30vw;
+    border-radius: 50%;
+    border: 1px solid #313131;
+  }
+
+  .cardContainer {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping to a new row */
+    gap: 2vw; /* Space between cards */
+    margin: 0 auto; /* Center the container */
+    }
+  
+  .card {
+    border: 1px solid #313131; /* Default gray border */
+    background-color: #f1f1f1;
+    padding: 1rem;
+    text-align: left;
+    opacity: 0;
+  }
+  
+  .card:nth-child(1),
+  .card:nth-child(4) {
+    border: 1px solid #e53935;
+    max-width: 20vw; /* Red border for specific cards */
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(3) {
+    width: fit-content;
+    max-width: 35vw;
+  }
+
+  .card.animate:nth-child(1) {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+  }
+  
+  .card.animate:nth-child(2) {
+    animation: slideInFromRight 1s ease-in-out forwards;
+    animation-delay: 0.5s; /* Delay for the second card */
+  }
+  
+  .card.animate:nth-child(3) {
+    animation: slideInFromLeft 1s ease-in-out forwards;
+    animation-delay: 1s; /* Delay for the third card */
+  }
+  
+  .card.animate:nth-child(4) {
+    animation: slideInFromRight 1s ease-in-out forwards;
+    animation-delay: 1.5s; /* Delay for the fourth card */
+  }
+  
+  @keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInFromRight {
+    from {
+      transform: translateX(100vw);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .cardTitle {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 31.65px;
+    text-align: left;
+    margin: 0;
+  }
+  
+  .cardText {
+    font-family: 'Roboto Flex';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.58px;
+    text-align: left;
+
+  }
+  
+  .iconContainer img{
+    width: 100%;
+  }
+  

@@ -1,0 +1,75 @@
+.hero {
+    margin-top: -20vh;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 25vh 15vw 15vh;
+    opacity: 0; /* Start with 0 opacity */
+    transition: opacity 2s ease-in-out; /* Add transition for smooth animation */
+    position: relative; /* Ensure the rectangles are positioned relative to this container */
+    overflow-x: hidden;
+  }
+  
+  .hero.fadeIn {
+    opacity: 1; /* Fully visible when fadeIn class is added */
+  }
+  
+  .mainText {
+    color: #313131;
+    font-family: 'Roboto Flex';
+    font-size: 3rem;
+    transform: scale(1, 1.15);
+    text-align: left;
+    margin: 0;
+  }
+  
+  .experienceContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .experienceNumber {
+    width: 10rem;
+  }
+  
+  .experienceText {
+    max-width: 9rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17.58px;
+    text-align: center;
+  }
+  
+  .leftRectangle, .rightRectangle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 70vh;
+    width: 10vw; /* Adjust the width of the rectangles as needed */
+    border: 1px solid black; /* Black border */
+    transition: transform 2s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  .leftRectangle {
+    left: 0;
+    top: 20vh;
+    transform: translateX(-100%); /* Start of-screen to the left */
+  }
+  
+  .rightRectangle {
+    right: 0;
+    top: 10vh;
+    transform: translateX(100%); /* Start off-screen to the right */
+  }
+  
+  .hero.fadeIn .leftRectangle {
+    transform: translateX(-10%); /* Slide in from the left */
+  }
+  
+  .hero.fadeIn .rightRectangle {
+    transform: translateX(10%); /* Slide in from the right */
+  }

@@ -1,0 +1,148 @@
+.servicesSection {
+  margin: -20vh 0 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  text-align: center;
+  align-items: center;
+  gap: 1rem;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  left: -5vw;
+  top: 50%;
+  width: 30vw;
+  transform: translateX(0);
+  height: 30vw;
+  border-radius: 50%;
+  border: 1px solid #313131;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 400;
+  line-height: 84.41px;
+  text-align: center;
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 1.5s ease-in-out;
+  transition-delay: 0.5s; /* Add transition for smooth animation */
+}
+
+.sectionTitle.fadeIn {
+  opacity: 1; /* Fully visible when fadeIn class is added */
+}
+
+.sectionSubtitle {
+  max-width: 80%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+  opacity: 0; /* Start with 0 opacity */
+  transition: opacity 1.5s ease-in-out;
+  transition-delay: 0.5s; /* Add transition for smooth animation */
+}
+
+.sectionSubtitle.fadeIn {
+  opacity: 1;
+}
+
+.cardContainer {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 24vw 24vw 24vw;
+  gap: 2vw;
+}
+
+.card {
+  background: #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #313131;
+  opacity: 0; /* Start with 0 opacity */
+  transition: transform 1.5s ease-in-out, opacity 1.5s ease-in-out; /* Longer transition for smooth animation */
+}
+
+.card:nth-child(5) {
+  grid-column: span 2;
+  border: 1px solid #e53935;
+}
+
+.card.fadeIn:nth-child(1),
+.card.fadeIn:nth-child(2),
+.card.fadeIn:nth-child(4) {
+  animation: slideInFromLeft 1.5s ease-in-out forwards;
+}
+
+.card.fadeIn:nth-child(3),
+.card.fadeIn:nth-child(5) {
+  animation: slideInFromRight 1.5s ease-in-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.cardContent {
+  padding: 1rem;
+  text-align: left;
+}
+
+.cardTitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.65px;
+  text-align: left;
+  margin: 0;
+}
+
+.cardText {
+  font-family: 'Roboto Flex';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: left;
+}
+
+.button {
+  font-family: 'Roboto Slab';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.65px;
+  text-align: left;
+  background-color: transparent;
+  border: 0;
+  outline: 1px solid black;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 0.5rem;
+}
+
+.button:hover {
+  color: white;
+  background-color: red;
+}

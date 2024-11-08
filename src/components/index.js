@@ -1,0 +1,6 @@
+export {default as HeroSection} from "./HeroSection/Hero"
+export {default as Header} from "./Header/Header"
+export {default as Footer} from "./Footer/Footer"
+export {default as AboutSection} from "./AboutSection/About"
+export {default as ServiceSection} from "./ServiceSection/Service"
+export {default as ContactSection} from "./ContactSection/ContactSection"

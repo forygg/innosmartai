@@ -1,0 +1,159 @@
+.header {
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vh 0vw 15vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  background-image: url(../../assets/circle.svg);
+  background-size: auto 105vh;
+  background-repeat: no-repeat;
+}
+
+
+.button {
+  margin-left: auto;
+  margin-right: 5vw;
+  border: 1px solid #313131;
+  padding: 1rem 2rem;
+  color: #313131;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.8s ease;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+  position: relative; /* Ensure the background is positioned relative to the button */
+  overflow: hidden; /* Hide the overflow of the background */
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -100%;
+  width: 100px;
+  height: 100px;
+  background: #F20505; /* Red background */
+  border-radius: 50%; /* Rounded stripe on the right */
+  transition: transform 1.5s ease; /* Transition for the background */
+  transform: scale(1); /* Start off-screen to the right */
+  z-index: -1; /* Ensure the background stays behind the text */
+}
+
+.button:hover {
+  color: white;
+}
+
+.button:hover::before {
+  transform: scale(10); /* Move the background to the left */
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.title {
+  display: flex;
+  line-height: 1em;
+  font-size: 96px;
+  font-weight: 400;
+  text-align: center;
+  color: #313131;
+  margin: 0;
+}
+
+.animContainer {
+  width: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.topBar,
+.bottomBar {
+  width: 50vw;
+  height: 1px;
+  align-self: flex-start;
+  background: #313131;
+  animation: slideIn 2s;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.bottomBar {
+  margin: 0.5rem 0;
+}
+
+.titleHighlight {
+  width: fit-content;
+  color: #F20505;
+}
+
+.subtitle {
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+}
+
+.move {
+  border: #313131 solid 1px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.move img {
+  width: 20px;
+  height: 60px;
+  position: relative;
+  animation: moveArrow 2.5s infinite;
+}
+
+/* Keyframes for arrow animation */
+@keyframes moveArrow {
+  0% {
+    top: -40px;
+  }
+
+  50% {
+    top: 5px;
+  }
+
+  100% {
+    top: 50px;
+    opacity: 1;
+  }
+}

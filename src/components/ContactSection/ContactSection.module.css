@@ -1,0 +1,129 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #313131;
+  color: white;
+  gap: 1rem;
+  padding: 5vh 5vw;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 84.41px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.contact span {
+  font-family: 'Roboto Flex';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+}
+
+.form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  align-items: center;
+}
+
+.form input {
+  width: 60%;
+  color: white;
+  background-color: #313131;
+  border: none;
+  border-bottom: 1px solid white;
+  padding: 0.3rem 0.5rem;
+}
+
+.form input.error {
+  border-bottom: 1px solid red; /* Red border for error */
+}
+
+.form button {
+  width: 50%;
+  border: 1px solid #ffffff; /* White border */
+  padding: 1rem 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 0.8s ease; /* Adjusted transition duration */
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: center;
+  position: relative;
+  overflow: hidden; /* Ensure the background is positioned relative to the button */
+}
+
+.form button::before {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  left: 100%;
+  width: 100px;
+  height: 100px;
+  background: #F20505; /* Red background */
+  border-radius: 50%; /* Rounded stripe on the right */
+  transition: transform 1.5s ease; /* Transition for the background */
+  transform: scale(1); /* Start off-screen to the right */
+}
+
+.form button:hover::before {
+  transform: scale(10); /* Move the background to the left */
+}
+
+.form button span {
+  position: relative;
+  z-index: 1; /* Ensure the text stays above the background */
+}
+
+.form .checkboxContainer {
+  display: flex;
+  align-items: center;
+  color: #696969;
+}
+
+.form .checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ffffff; /* White border for custom checkbox */
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form .checkbox.error {
+  border: 1px solid red; /* Red border for error */
+}
+
+.form .checkbox:checked {
+  background: green;
+}
+
+.form .checkboxLabel {
+  font-family: 'Roboto Flex';
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 17.58px;
+  text-align: left;
+}
+
+.form .checkboxLabel.error {
+  color: red;
+}
+
+.successMessage, .errorMessage {
+  font-family: 'Roboto Flex';
+}
+
+.successMessage {
+  color: green;
+}
