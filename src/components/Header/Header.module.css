@@ -170,4 +170,13 @@
   .button {
     margin-right: 10vw;
   }
+  .move img {
+    animation: none;
+  }
+  .titleContainer {
+    animation: none ;
+  }
+  .topBar, .bottomBar {
+    animation: none;
+  }
 }

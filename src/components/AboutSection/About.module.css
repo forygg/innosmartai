@@ -126,6 +126,14 @@
     }
     .card {
       min-width: 70vw;
+      opacity: 1;
+    }
+    .card.animate:nth-child(1),
+    .card.animate:nth-child(2),
+    .card.animate:nth-child(3),
+    .card.animate:nth-child(4)
+    {
+      animation: none;
     }
     .sectionTitle {
       font-size: 3rem;

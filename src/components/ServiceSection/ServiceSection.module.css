@@ -156,8 +156,22 @@
     font-size: 2.5rem;
     line-height: normal;
   }
+  .sectionSubtitle {
+    transition: none;
+  }
   .cardContainer {
     display: flex;
     flex-direction: column;
+  }
+  .card {
+    transition: none;
+    opacity: 1;
+  }
+  .card.fadeIn:nth-child(1),
+  .card.fadeIn:nth-child(2),
+  .card.fadeIn:nth-child(3),
+  .card.fadeIn:nth-child(4),
+  .card.fadeIn:nth-child(5) {
+    animation: none;
   }
 }

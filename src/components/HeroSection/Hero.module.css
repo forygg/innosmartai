@@ -78,11 +78,13 @@
     .hero {
       height: fit-content;
       gap: 2rem;
+      transition: none;
     }
     .mainText{
       font-size: 1.75em;
     }
     .leftRectangle, .rightRectangle {
       height: 60vh;
+      transform: none;
     }
   }
