@@ -38,11 +38,27 @@ const ContactSection = () => {
       privacyPolicy: !formData.privacyPolicy,
     };
     setErrors(newErrors);
-
+  
     if (!Object.values(newErrors).some(error => error)) {
       // Submit the form data
       console.log('Form submitted:', formData);
-      setIsSubmitted(true);
+  
+      fetch('http://localhost:5000/submit-form', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+        .then(response => response.text())
+        .then(data => {
+          console.log('Success:', data);
+          setIsSubmitted(true);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          setIsSubmitted(false);
+        });
     } else {
       // Display error message
       console.log('Please fill in all required fields');

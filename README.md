@@ -1,1 +1,19 @@
-https://forygg.github.io/innosmartai/
+# Инструкция
+## Установка зависимостей
+```bash
+npm install
+npm install express body-parser cors fs
+```
+## Запуск фронта
+```bash
+npm run build
+```
+## Размещение фронтенда на сервере
+Скопируйте содержимое директории build в корневую директорию вашего веб-сервера. Например, если вы используете Apache, скопируйте файлы в директорию /var/www/html.
+
+## Запуск бэкэнда
+```bash
+cd backend
+node server.js
+```
+По умолчанию, бэкенд будет доступен по адресу http://localhost:5000.
