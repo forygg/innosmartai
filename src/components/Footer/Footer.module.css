@@ -89,7 +89,7 @@
     /* Ensure the text stays above the background */
   }
 
-@media screen {
+  @media (max-width: 768px) {
   .leftblock {
     align-items: center;
   }

@@ -12,7 +12,7 @@ const HeroSection = () => {
           }
         });
       },
-      { threshold: 0.5}// Adjust threshold as needed
+      { threshold: 0.2}// Adjust threshold as needed
     );
 
     const heroSection = document.querySelector(`.${styles.hero}`);

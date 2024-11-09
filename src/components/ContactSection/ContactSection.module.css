@@ -134,10 +134,17 @@
 }
 
 
-@media screen {
+@media (max-width: 768px) {
+  .contact {
+    height: 100%;
+  }
   .contact h2 {
+    width: 80%;
     font-size: 3rem;
     line-height: normal;
+  }
+  .contact span {
+    width: 70%;
   }
   .form {
     width: 100vw;

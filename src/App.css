@@ -20,3 +20,13 @@ body {
   top: 40px;
   right: 40px;
 }
+
+@media (max-width: 768px) {
+  .contact-page {
+    height: 100vh;
+  }
+  .contact-page .close-button{
+    width: 30px;
+    height: 30px;
+  }
+}

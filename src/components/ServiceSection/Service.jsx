@@ -11,7 +11,7 @@ const ServicesSection = ({ onContactClick }) => {
                     }
                 });
             },
-            { threshold: 0.8 } // Adjust threshold as needed
+            { threshold: 0.2 } // Adjust threshold as needed
         );
 
         const elements = document.querySelectorAll(`.${styles.sectionTitle}, .${styles.sectionSubtitle}, .${styles.card}`);

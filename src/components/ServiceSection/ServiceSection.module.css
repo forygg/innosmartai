@@ -147,7 +147,7 @@
   background-color: red;
 }
 
-@media screen {
+@media (max-width: 768px) {
   .servicesSection {
     margin: 0;
   }

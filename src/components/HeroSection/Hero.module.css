@@ -74,7 +74,7 @@
     transform: translateX(10%); /* Slide in from the right */
   }
 
-  @media screen {
+  @media (max-width: 768px) {
     .hero {
       height: fit-content;
     }
