@@ -125,5 +125,25 @@
 }
 
 .successMessage {
+  text-align: center;
   color: green;
+}
+
+.errorMessage {
+  text-align: center;
+}
+
+
+@media screen {
+  .contact h2 {
+    font-size: 3rem;
+    line-height: normal;
+  }
+  .form {
+    width: 100vw;
+  }
+  .form input {
+    width: 80%;
+  }
+  
 }

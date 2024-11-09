@@ -117,3 +117,18 @@
     width: 100%;
   }
   
+  @media screen {
+    .aboutSection {
+      height: fit-content;
+    }
+    .cardContainer {
+      flex-direction: column;
+    }
+    .card {
+      min-width: 70vw;
+    }
+    .sectionTitle {
+      font-size: 3rem;
+      line-height: normal;
+    }
+  }

@@ -10,14 +10,14 @@ function App() {
   }
 
   return (
-    <div>
+    <>
       {isContactVisible ? (
         <div className='contact-page'>
           <ContactSection />
           <img className="close-button" onClick={toggleContactSection} src={cross} alt='/'/>
         </div>
       ) : (
-        <div>
+        <div className='appContainer'>
           <Header onContactClick={toggleContactSection} />
           <HeroSection />
           <AboutSection />
@@ -26,10 +26,8 @@ function App() {
           <Footer onContactClick={toggleContactSection} />
         </div>
       )}
-
-    </div>
+      </>
   )
-
 }
 
 export default App;

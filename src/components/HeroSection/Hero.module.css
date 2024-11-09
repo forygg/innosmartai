@@ -73,3 +73,12 @@
   .hero.fadeIn .rightRectangle {
     transform: translateX(10%); /* Slide in from the right */
   }
+
+  @media screen {
+    .hero {
+      height: fit-content;
+    }
+    .mainText{
+      font-size: 2rem;
+    }
+  }
