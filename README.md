@@ -1,3 +1,5 @@
+npm install
+
 ## Для теста
 npm start
 
