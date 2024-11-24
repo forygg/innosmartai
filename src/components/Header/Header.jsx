@@ -15,7 +15,12 @@ const Header = ({ onContactClick }) => {
 
     return (
         <header className={styles.header}>
-            <button className={styles.button} onClick={onContactClick}>Оставить заявку</button>
+            <button className={styles.button} onClick={onContactClick}> Оставить заявку</button>
+            <div className={styles.circlesContainer}>
+                <div className={styles.earth}>
+                    <div className={styles.moon}></div>
+                </div>
+            </div>
             <div className={styles.titleContainer}>
                 <h1 className={styles.title}>
                     InnoSmart

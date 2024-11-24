@@ -1,16 +1,18 @@
 .hero {
     margin-top: -20vh;
+    min-height: fit-content;
     height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 4rem;
-    padding: 25vh 15vw 15vh;
+    padding: 25vh 20vw 15vh;
     opacity: 0; /* Start with 0 opacity */
     transition: opacity 2s ease-in-out; /* Add transition for smooth animation */
     position: relative; /* Ensure the rectangles are positioned relative to this container */
     overflow-x: hidden;
+    overflow-y: visible;
   }
   
   .hero.fadeIn {
@@ -76,7 +78,7 @@
 
   @media (max-width: 768px) {
     .hero {
-      height: fit-content;
+      min-height: fit-content; 
       gap: 2rem;
       transition: none;
     }

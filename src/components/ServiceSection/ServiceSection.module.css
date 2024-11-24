@@ -1,8 +1,8 @@
 .servicesSection {
-  margin: -20vh 0 0 0;
+  margin: -15vh 0 0 0;
   display: flex;
   flex-direction: column;
-  padding: 5vh 5vw;
+  padding: 5vh 10vw;
   text-align: center;
   align-items: center;
   gap: 1rem;
@@ -11,6 +11,7 @@
 }
 
 .circle {
+  z-index: -1;
   position: absolute;
   left: -5vw;
   top: 50%;
@@ -128,6 +129,7 @@
 }
 
 .button {
+  position: relative;
   font-family: 'Roboto Slab';
   font-size: 24px;
   font-weight: 400;
@@ -138,14 +140,34 @@
   outline: 1px solid black;
   text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+  transition: color 1s ease;
   padding: 0.5rem;
+  overflow: hidden;
+}
+
+
+
+.button::before {
+  top: -100;
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: #F20505; /* Red background */
+  border-radius: 50%; /* Rounded stripe on the right */
+  transition: transform 0.7s ease; /* Transition for the background */
+  transform: scale(0); /* Start off-screen to the right */
+  z-index: -1; /* Ensure the background stays behind the text */
 }
 
 .button:hover {
   color: white;
-  background-color: red;
 }
+
+.button:hover::before {
+  transform: scale(10); /* Move the background to the left */
+}
+
 
 @media (max-width: 768px) {
   .servicesSection {

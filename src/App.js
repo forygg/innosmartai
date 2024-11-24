@@ -9,25 +9,25 @@ function App() {
     setContactVisible(!isContactVisible);
   }
 
+
   return (
     <>
-      {isContactVisible ? (
-        <div className='contact-page'>
-          <ContactSection />
-          <img className="close-button" onClick={toggleContactSection} src={cross} alt='/'/>
-        </div>
-      ) : (
-        <div className='appContainer'>
-          <Header onContactClick={toggleContactSection} />
-          <HeroSection />
-          <AboutSection />
-          <ServiceSection onContactClick={toggleContactSection} />
-          <ContactSection />
-          <Footer onContactClick={toggleContactSection} />
-        </div>
-      )}
-      </>
-  )
+      <div className={`contact-page ${isContactVisible ? 'visible' : 'hidden'}`}>
+        <ContactSection />
+        <img className="close-button" onClick={toggleContactSection} src={cross} alt='/' />
+      </div>
+  
+      <div className='appContainer'>
+        <Header onContactClick={toggleContactSection} />
+        <HeroSection />
+        <AboutSection />
+        <ServiceSection onContactClick={toggleContactSection} />
+        <ContactSection />
+        <Footer onContactClick={toggleContactSection} />
+      </div>
+    </>
+  );  
+  
 }
 
 export default App;

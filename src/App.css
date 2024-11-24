@@ -2,6 +2,10 @@ body {
   background: #F1F1F1;
 }
 
+.appContainer {
+
+}
+
 .contact-page {
   background-color: #313131;
   height: 100vh;
@@ -20,6 +24,21 @@ body {
   top: 40px;
   right: 40px;
 }
+
+
+.hidden {
+  visibility: hidden;
+  position: fixed;
+  z-index: -1;
+}
+
+.visible {
+  visibility: visible;
+  position: fixed;
+  z-index: 10;
+}
+
+
 
 @media (max-width: 768px) {
   .contact-page {

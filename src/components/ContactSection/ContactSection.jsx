@@ -31,11 +31,8 @@ const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = {
-      name: !formData.name,
       email: !formData.email,
-      phone: !formData.phone,
-      service: !formData.service,
-      privacyPolicy: !formData.privacyPolicy,
+      privacyPolicy: !formData.privacyPolicy
     };
     setErrors(newErrors);
   

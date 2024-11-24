@@ -33,6 +33,7 @@ const AboutSection = () => {
       <h2 className={styles.sectionTitle}>Коротко о нас</h2>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
+          <div className={styles.redline}></div>
           <h3 className={styles.cardTitle}>Большой опыт</h3>
           <p className={styles.cardText}>
             Команда профессиональных разработчиков с большим опытом в сфере разработки ПО и искусственного интеллекта
@@ -48,12 +49,14 @@ const AboutSection = () => {
           </div>
         </div>
         <div className={styles.card}>
+          <div className={styles.blackline}></div>
           <h3 className={styles.cardTitle}>Индивидуальный подход</h3>
           <p className={styles.cardText}>
             Всегда готовы подробно обсудить условия и перечень работ, чтобы прийти к наилучшим условиям для заказчика. Предлагаем гибкие и масштабируемые решения, которые растут вместе с вашим бизнесом
           </p>
         </div>
         <div className={styles.card}>
+          <div className={styles.redline}></div>
           <h3 className={styles.cardTitle}>Поддержка</h3>
           <p className={styles.cardText}>
             Мы предоставляем полную поддержку и обслуживание после запуска, гарантируя бесперебойную работу
