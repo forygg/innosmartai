@@ -133,6 +133,14 @@
   text-align: center;
 }
 
+.form .privacyPolicyLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.form .checkboxLabel.error .privacyPolicyLink {
+  color: red;
+}
 
 @media (max-width: 768px) {
   .contact {

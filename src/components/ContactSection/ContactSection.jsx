@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ContactSection.module.css';
+import privacyPolicyPdf from '../../assets/privacy_policy.pdf';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -113,7 +114,7 @@ const ContactSection = () => {
             onChange={handleChange}
           />
           <label htmlFor="privacyPolicy" className={`${styles.checkboxLabel} ${errors.privacyPolicy ? styles.error : ''}`}>
-            Я согласен с Политикой конфиденциальности
+            Я согласен с <a className={styles.privacyPolicyLink} href={privacyPolicyPdf} target="_blank" rel="noopener noreferrer">Политикой конфиденциальности</a>
           </label>
         </div>
         {isSubmitted ? (
