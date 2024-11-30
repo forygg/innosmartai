@@ -38,56 +38,56 @@ const ServicesSection = ({ onContactClick }) => {
                 <div className={styles.card}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Анализ больших данных</h3>
-                        <p className={styles.cardText}>
-                            • Извлечение ценной информации из огромных объемов данных<br />
-                            • Прогнозирование поведения клиентов и рыночных тенденций<br />
-                            • Создание отчетов и аналитики для принятия стратегических решений
-                        </p>
+                        <ul className={styles.cardText}>
+                            <li>Извлечение ценной информации из огромных объемов данных</li>
+                            <li>Прогнозирование поведения клиентов и рыночных тенденций</li>
+                            <li>Создание отчетов и аналитики для принятия стратегических решений</li>
+                        </ul>
                     </div>
                     <button className={styles.button} onClick={onContactClick}>Заказать</button>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Машинное зрение</h3>
-                        <p className={styles.cardText}>
-                            • Распознавание объектов и изображений для автоматизации визуальных процессов<br />
-                            • Контроль качества продукции с помощью анализа изображений<br />
-                            • Система видеонаблюдения и мониторинг для обеспечения безопасности
-                        </p>
+                        <ul className={styles.cardText}>
+                            <li>Распознавание объектов и изображений для автоматизации визуальных процессов</li>
+                            <li>Контроль качества продукции с помощью анализа изображений</li>
+                            <li>Система видеонаблюдения и мониторинг для обеспечения безопасности</li>
+                        </ul>
                     </div>
                     <button className={styles.button} onClick={onContactClick}>Заказать</button>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Распознавание текста</h3>
-                        <p className={styles.cardText}>
-                            • Автоматическая обработка и анализ документов<br />
-                            • Перевод изображений текста в цифровой формат<br />
-                            • Оптимизация документооборота для сокращения времени и ошибок
-                        </p>
+                        <ul className={styles.cardText}>
+                            <li>Автоматическая обработка и анализ документов</li>
+                            <li>Перевод изображений текста в цифровой формат</li>
+                            <li>Оптимизация документооборота для сокращения времени и ошибок</li>
+                        </ul>
                     </div>
                     <button className={styles.button} onClick={onContactClick}>Заказать</button>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>R&D проекты</h3>
-                        <p className={styles.cardText}>
-                            • Разработка уникальных AI-решений под нужды вашего бизнеса<br />
-                            • Исследование и тестирование инновационных технологий<br />
-                            • Прототипирование и внедрение передовых решений
-                        </p>
+                        <ul className={styles.cardText}>
+                            <li>Разработка уникальных AI-решений под нужды вашего бизнеса</li>
+                            <li>Исследование и тестирование инновационных технологий</li>
+                            <li>Прототипирование и внедрение передовых решений</li>
+                        </ul>
                     </div>
                     <button className={styles.button} onClick={onContactClick}>Заказать</button>
                 </div>
                 <div className={styles.card}>
                     <div className={styles.cardContent}>
                         <h3 className={styles.cardTitle}>Генеративный ИИ</h3>
-                        <p className={styles.cardText}>
-                            • Автоматическое создание текстов для статей, предложений и отчетов<br />
-                            • Генерация брендированного визуального контента — изображения, баннеры, презентации<br />
-                            • Разработка умного чат-бота, который продает услуги компании и взаимодействует с клиентами<br />
-                            • Персонализированные рекомендации для клиентов
-                        </p>
+                        <ul className={styles.cardText}>
+                            <li>Автоматическое создание текстов для статей, предложений и отчетов</li>
+                            <li>Генерация брендированного визуального контента — изображения, баннеры, презентации</li>
+                            <li>Разработка умного чат-бота, который продает услуги компании и взаимодействует с клиентами</li>
+                            <li>Персонализированные рекомендации для клиентов</li>
+                        </ul>
                     </div>
                     <button className={styles.button} onClick={onContactClick}>Заказать</button>
                 </div>

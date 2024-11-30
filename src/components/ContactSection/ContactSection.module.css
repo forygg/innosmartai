@@ -11,7 +11,7 @@
 .contact h2 {
   font-size: 4rem;
   font-weight: 400;
-  line-height: 84.41px;
+  line-height: 90%;
   text-align: center;
   margin-bottom: 0;
 }
@@ -91,18 +91,16 @@
 }
 
 .form .checkbox {
+  margin: 0;
   appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 1px solid #ffffff; /* White border for custom checkbox */
-  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  margin-right: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-.form .checkbox.error {
-  border: 1px solid red; /* Red border for error */
-}
 
 .form .checkbox:checked {
   background: green;
@@ -134,7 +132,7 @@
 }
 
 .form .privacyPolicyLink {
-  text-decoration: none;
+  text-decoration: underline;
   color: inherit;
 }
 
@@ -149,7 +147,7 @@
   .contact h2 {
     width: 80%;
     font-size: 3rem;
-    line-height: normal;
+    line-height: 90%;
   }
   .contact span {
     width: 70%;
