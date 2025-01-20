@@ -10,6 +10,13 @@
   position: relative;
 }
 
+@media (max-height: 860px) {
+  .servicesSection {
+    margin-top: 0;
+  }
+}
+  
+
 .circle {
   z-index: -1;
   position: absolute;

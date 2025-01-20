@@ -5,7 +5,13 @@
     padding: 0vh 10vw;
     position: relative;
   }
-  
+
+  @media (max-height: 860px) {
+    .aboutSection {
+      height: fit-content;
+    }
+  }
+
   .sectionTitle {
     font-size: 4rem;
     font-weight: 400;
